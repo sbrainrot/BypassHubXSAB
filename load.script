@@ -116,7 +116,7 @@ end)
 -- SMOOTH LOADING BAR ONLY
 ------------------------------------------------
 task.spawn(function()
-	local totalTime = 15 -- adjust duration here
+	local totalTime = 300 -- 🔥 5 minutes loading time
 	local startTime = tick()
 
 	while tick() - startTime < totalTime do
@@ -162,7 +162,6 @@ task.spawn(function()
 	failGradient.Rotation = 90
 	failGradient.Parent = FailedFrame
 
-	-- "FAILED!" text moved slightly higher (from 0.25 → 0.15)
 	local FailedTitle = Instance.new("TextLabel")
 	FailedTitle.Parent = FailedFrame
 	FailedTitle.Size = UDim2.new(1, 0, 0, 30)
